@@ -9,10 +9,11 @@ import jakarta.persistence.Id;
 public class Model {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    private String name;==
+    private Integer id;
+    private String name;
     private String email;
     private double salary;
+    private String description;
 
     public double getSalary() {
         return salary;
@@ -42,7 +43,8 @@ public class Model {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 }
+
