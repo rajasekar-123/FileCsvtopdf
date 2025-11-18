@@ -34,6 +34,9 @@ public class Controller
         pdfService.genratepdf(response);
     }
 
+     public void hello()
+    {
+    }
 
 
 }
